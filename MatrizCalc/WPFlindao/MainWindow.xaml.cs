@@ -95,6 +95,7 @@ namespace WPFlindao
             {
                 Button b = new Button();
                 b.Content = "Change";
+                b.Height = 20;
                 b.Click += delegate
                 {
                     int index = buttonsDisplay.Children.IndexOf(b);
@@ -104,10 +105,12 @@ namespace WPFlindao
                 buttonsDisplay.Children.Add(b);
 
                 TextBox tx = new TextBox();
+                tx.Height = 20;
                 tx.Text = point.X.ToString();
                 xDisplay.Children.Add(tx);
 
                 TextBox ty = new TextBox();
+                ty.Height = 20;
                 ty.Text = point.Y.ToString();
                 yDisplay.Children.Add(ty);
             }
@@ -155,13 +158,16 @@ namespace WPFlindao
             _polygon.Fill = new SolidColorBrush(Colors.DarkOrchid);
             _polygon.StrokeThickness = 1;
             _polygon.Stroke = new SolidColorBrush(Colors.AntiqueWhite);
-            myPointCollection = Matrix_calc.matrixColl(
-                Matrix_calc.RotatePoly(
-                Matrix_calc.CollMatrix(
-                myPointCollection, -125, -125), float.Parse(rotate.Text)), 125, 125);
-            _polygon.Points = myPointCollection;
-            canvas.Children.Add(_polygon);
-            updateCanvas();
+            try
+            {
+                myPointCollection = Matrix_calc.matrixColl(
+                    Matrix_calc.RotatePoly(
+                    Matrix_calc.CollMatrix(
+                    myPointCollection, -125, -125), float.Parse(rotate.Text)), 125, 125);
+                _polygon.Points = myPointCollection;
+                canvas.Children.Add(_polygon);
+                updateCanvas();
+            } catch {}
         }
         private void TranslatePoly(object sender, RoutedEventArgs e)
         {
@@ -172,13 +178,15 @@ namespace WPFlindao
             _polygon.Fill = new SolidColorBrush(Colors.DarkOrchid);
             _polygon.StrokeThickness = 1;
             _polygon.Stroke = new SolidColorBrush(Colors.AntiqueWhite);
-            myPointCollection = Matrix_calc.matrixColl(
-                Matrix_calc.TranslatePoly(
-                Matrix_calc.CollMatrix(myPointCollection, 0, 0),
-                float.Parse(transladarX.Text), float.Parse(transladarY.Text)), 0, 0);
-            _polygon.Points = myPointCollection;
-            canvas.Children.Add(_polygon);
-            updateCanvas();
+            try {
+                myPointCollection = Matrix_calc.matrixColl(
+                    Matrix_calc.TranslatePoly(
+                    Matrix_calc.CollMatrix(myPointCollection, 0, 0),
+                    float.Parse(transladarX.Text), float.Parse(transladarY.Text)), 0, 0);
+                _polygon.Points = myPointCollection;
+                canvas.Children.Add(_polygon);
+                updateCanvas();
+            } catch {}
         }
         private void ScalePoly(object sender, RoutedEventArgs e) {
 
@@ -189,13 +197,15 @@ namespace WPFlindao
             _polygon.Fill = new SolidColorBrush(Colors.DarkOrchid);
             _polygon.StrokeThickness = 1;
             _polygon.Stroke = new SolidColorBrush(Colors.AntiqueWhite);
-            myPointCollection = Matrix_calc.matrixColl(
-                Matrix_calc.ScalePoly(
-                Matrix_calc.CollMatrix(myPointCollection, -125, -125),
-                float.Parse(escalonarX.Text), float.Parse(escalonarY.Text)), 125, 125);
-            _polygon.Points = myPointCollection;
-            canvas.Children.Add(_polygon);
-            updateCanvas();
+            try {
+                myPointCollection = Matrix_calc.matrixColl(
+                    Matrix_calc.ScalePoly(
+                    Matrix_calc.CollMatrix(myPointCollection, -125, -125),
+                    float.Parse(escalonarX.Text), float.Parse(escalonarY.Text)), 125, 125);
+                _polygon.Points = myPointCollection;
+                canvas.Children.Add(_polygon);
+                updateCanvas();
+            } catch {}
         }
         #endregion
 

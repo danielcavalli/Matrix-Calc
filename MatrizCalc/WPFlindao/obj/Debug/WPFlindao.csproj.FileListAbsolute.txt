@@ -180,3 +180,29 @@ C:\Users\User\Documents\WPFlindao v0.2\WPFlindao\WPFlindao\obj\Debug\WPFlindao.P
 C:\Users\User\Documents\WPFlindao v0.2\WPFlindao\WPFlindao\obj\Debug\WPFlindao.csproj.GenerateResource.Cache
 C:\Users\User\Documents\WPFlindao v0.2\WPFlindao\WPFlindao\bin\Debug\WPFlindao.exe
 C:\Users\User\Documents\WPFlindao v0.2\WPFlindao\WPFlindao\bin\Debug\WPFlindao.pdb
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\bin\Debug\WPFlindao.exe.config
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\WPFlindao.exe
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\WPFlindao.pdb
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\bin\Debug\WPFlindao.exe
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\bin\Debug\WPFlindao.pdb
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\WPFlindao.csprojResolveAssemblyReference.cache
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\MainWindow.baml
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\MainWindow.g.cs
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\App.g.cs
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\WPFlindao_MarkupCompile.cache
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\WPFlindao.g.resources
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\WPFlindao.Properties.Resources.resources
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Debug\WPFlindao.csproj.GenerateResource.Cache
+E:\AWESOMEMATRIX\WPFlindao\bin\Debug\WPFlindao.exe.config
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\WPFlindao.exe
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\WPFlindao.pdb
+E:\AWESOMEMATRIX\WPFlindao\bin\Debug\WPFlindao.exe
+E:\AWESOMEMATRIX\WPFlindao\bin\Debug\WPFlindao.pdb
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\WPFlindao.csprojResolveAssemblyReference.cache
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\MainWindow.baml
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\MainWindow.g.cs
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\App.g.cs
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\WPFlindao_MarkupCompile.cache
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\WPFlindao.g.resources
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\WPFlindao.Properties.Resources.resources
+E:\AWESOMEMATRIX\WPFlindao\obj\Debug\WPFlindao.csproj.GenerateResource.Cache

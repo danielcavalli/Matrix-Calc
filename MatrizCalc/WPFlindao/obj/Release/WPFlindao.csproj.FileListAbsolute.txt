@@ -1,0 +1,12 @@
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\bin\Release\WPFlindao.exe.config
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\bin\Release\WPFlindao.exe
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\bin\Release\WPFlindao.pdb
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\MainWindow.baml
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\MainWindow.g.cs
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\App.g.cs
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\WPFlindao_MarkupCompile.cache
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\WPFlindao.g.resources
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\WPFlindao.Properties.Resources.resources
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\WPFlindao.csproj.GenerateResource.Cache
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\WPFlindao.exe
+C:\Users\Supervisor\Documents\WPFlindao v0.3\WPFlindao\WPFlindao\obj\Release\WPFlindao.pdb

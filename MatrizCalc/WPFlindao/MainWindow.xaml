@@ -32,7 +32,7 @@
             </Rectangle>
         </Button>
         <Grid Margin="0,40,0,0">
-            <ComboBox Name="comboBoxOperation" Margin="22,323,918,167" IsEditable="False" IsEnabled="True" BorderBrush="{x:Null}" RenderTransformOrigin="0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18.667" FontFamily="DejaVu Sans">
+            <ComboBox Name="comboBoxOperation" Margin="22,360,918,130" IsEditable="False" IsEnabled="True" BorderBrush="{x:Null}" RenderTransformOrigin="0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18.667" FontFamily="DejaVu Sans">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -51,7 +51,7 @@
             <Label Name="validMatrix1" Content="No matrix" HorizontalAlignment="Left" Margin="197,272,0,0" VerticalAlignment="Top" Foreground="#FFEDEDED" Height="26" Width="65" HorizontalContentAlignment="Right"/>
             <TextBox Name="matrixInput2" TextChanged="matrixInputTextChanged" HorizontalAlignment="Left" Height="240" Margin="282,27,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Top" Width="240" FontFamily="Courier New" Background="#22000000" Foreground="#FFEDEDED" CaretBrush="#FFEDEDED" FontSize="16"/>
             <Label Name="validMatrix2" Content="No matrix" HorizontalAlignment="Left" Margin="458,272,0,0" VerticalAlignment="Top" Foreground="#FFEDEDED" Height="26" Width="64" HorizontalContentAlignment="Right"/>
-            <Button HorizontalAlignment="Left" BorderThickness="0" Margin="282,323,0,0" VerticalAlignment="Top" Width="240" Height="50" Click="matrixOperation" BorderBrush="{x:Null}" Background="{x:Null}" >
+            <Button HorizontalAlignment="Left" BorderThickness="0" Margin="282,360,0,0" VerticalAlignment="Top" Width="240" Height="50" Click="matrixOperation" BorderBrush="{x:Null}" Background="{x:Null}" >
                 <Rectangle Width="240" Height="50">
                     <Rectangle.Fill>
                         <ImageBrush x:Name="CalculateIcon" ImageSource="Images\calcButton.png" />

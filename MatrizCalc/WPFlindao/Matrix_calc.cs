@@ -348,101 +348,15 @@ namespace WPFLindao
 
             for (int i = 0; i < _i; i++) {
                 for (int j = 0; j < _j; j++) {
-                    string i_formula = formulaPreview[2].Replace("i", (i + 1).ToString());
-                    string x_formula = formulaPreview[3].Replace("j", (j + 1).ToString());
-                    Console.WriteLine(i_formula);
-                    _matrix[i, j] = Convert.ToSingle(formulaCalculator.Compute("(" + i_formula + " + " + x_formula + ")", ""));
+                    string _formula = formulaPreview[2].Replace("i", (i + 1).ToString());
+                    _formula = _formula.Replace("j", (j + 1).ToString());
+                    try
+                    {
+                        _matrix[i, j] = Convert.ToSingle(formulaCalculator.Compute("(" + _formula + ")", ""));
+                    } catch {}
                 }
             }
             return _matrix;
         }
-
-        /*public static float[,] Formula(string A,string B, string L, string C,string E,string E2, string E3)
-        {
-            float a = 1;
-            float b = 1;
-            float e1 = 1;
-            float e2 = 1;
-            float e3 = 1;
-
-            bool ocarafezmerda = false;
-            string qualmerdaelefez = "";
-
-            #region Coisas Feias
-            if (A == "j" || A == "J" || A == "coluna" || A == "colunas")
-            {
-                ocarafezmerda = true;
-            }
-            if (E == "j" || E == "J")
-            {
-                qualmerdaelefez = "a^j";
-            }
-            if (E == "i" || E == "I")
-            {
-                qualmerdaelefez = "a^i";
-            }
-            if (E2 == "j" || E2 == "J")
-            {
-                qualmerdaelefez = "b^j";
-            }
-            if (E2 == "i" || E2 == "I")
-            {
-                qualmerdaelefez = "b^i";
-            }
-            if (E == "j*i" || E == "J*I")
-            {
-                qualmerdaelefez = "a^j*i";
-            }
-            if (E2 == "i*j" || E2 == "I*J")
-            {
-                qualmerdaelefez = "b^i*j";
-            }
-            if (!ocarafezmerda)
-            {
-                a = float.Parse(A);//Coeficiente do I | Caso não seja usado tem que ser 1
-            }
-            b = float.Parse(B);//Coeficiente do J | Caso não seja usado tem que ser 1
-            e1 = float.Parse(E);//Expoente do I | Caso não seja usado tem que ser 1
-            e2 = float.Parse(E2);//Expoente do J | Caso não seja usado tem que ser 1
-            e3 = float.Parse(E3);//Expoente da Expressão | Caso não seja usado tem que ser 1
-            #endregion
-            float[,] R = new float[int.Parse(L), int.Parse(C)];
-
-            for (int i = 0; i < R.GetLength(0); i++)
-            {
-                for (int j = 0; j < R.GetLength(1); j++)
-                {
-                    #region Mais Coisa Feia
-                    if (ocarafezmerda)
-                    {
-                        a = j;
-                    }
-                    switch (qualmerdaelefez)
-                    {
-                        case "a^j":
-                            e1 = j;
-                            break;
-                        case "a^i":
-                            e1 = i;
-                            break;
-                        case "b^i":
-                            e2 = i;
-                            break;
-                        case "b^j":
-                            e2 = j;
-                            break;
-                        case "b^j*i":
-                            e2 = j*i;
-                            break;
-                        case "a^j*i":
-                            e3 = j*i;
-                            break;
-                    }
-                    #endregion
-                    R[i, j] = (float)Math.Pow(a * (float)Math.Pow(i, e1) + b * (float)Math.Pow(j, e2), e3);
-                }
-            }
-            return R;
-        }*/
     }
 }
