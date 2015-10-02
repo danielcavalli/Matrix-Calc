@@ -291,19 +291,42 @@ namespace WPFlindao
                 switch (comboBoxOperation.Text)
                 {
                     case "Soma":
-                        displayMatrix.Text =
-                            Matrix_calc.toString(Matrix_calc.Add2dArray(
-                                Matrix_calc.toMatrix(matrixInput1.Text), Matrix_calc.toMatrix(matrixInput2.Text)));
+                        if (Matrix_calc.toMatrix(matrixInput1.Text).GetLength(0) == Matrix_calc.toMatrix(matrixInput2.Text).GetLength(0)
+                            && Matrix_calc.toMatrix(matrixInput1.Text).GetLength(1) == Matrix_calc.toMatrix(matrixInput2.Text).GetLength(1))
+                        {
+                            displayMatrix.Text =
+                                Matrix_calc.toString(Matrix_calc.Add2dArray(
+                                    Matrix_calc.toMatrix(matrixInput1.Text), Matrix_calc.toMatrix(matrixInput2.Text)));
+                        }
+                        else
+                        {
+                            MessageBox.Show("As matrizes tevem a mesma quantidade de linhas e colunas");
+                        }
                         break;
                     case "Subtração":
-                        displayMatrix.Text =
-                            Matrix_calc.toString(Matrix_calc.Sub2dArray(
-                                Matrix_calc.toMatrix(matrixInput1.Text), Matrix_calc.toMatrix(matrixInput2.Text)));
+                        if (Matrix_calc.toMatrix(matrixInput1.Text).GetLength(0) == Matrix_calc.toMatrix(matrixInput2.Text).GetLength(0)
+                            && Matrix_calc.toMatrix(matrixInput1.Text).GetLength(1) == Matrix_calc.toMatrix(matrixInput2.Text).GetLength(1))
+                        {
+                            displayMatrix.Text =
+                                Matrix_calc.toString(Matrix_calc.Sub2dArray(
+                                    Matrix_calc.toMatrix(matrixInput1.Text), Matrix_calc.toMatrix(matrixInput2.Text)));
+                        }
+                        else
+                        {
+                            MessageBox.Show("As matrizes tevem a mesma quantidade de linhas e colunas");
+                        }
                         break;
                     case "Multiplicação":
-                        displayMatrix.Text =
-                            Matrix_calc.toString(Matrix_calc.Mult2dArray(
-                                Matrix_calc.toMatrix(matrixInput1.Text), Matrix_calc.toMatrix(matrixInput2.Text)));
+                        if (Matrix_calc.toMatrix(matrixInput1.Text).GetLength(0) == Matrix_calc.toMatrix(matrixInput2.Text).GetLength(1))
+                        {
+                            displayMatrix.Text =
+                                Matrix_calc.toString(Matrix_calc.Mult2dArray(
+                                    Matrix_calc.toMatrix(matrixInput1.Text), Matrix_calc.toMatrix(matrixInput2.Text)));
+                        }
+                        else
+                        {
+                            MessageBox.Show("O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda");
+                        }
                         break;
                     case "Multiplicação por número real":
                         try {
@@ -315,12 +338,33 @@ namespace WPFlindao
                         }
                         break;
                     case "Determinante":
-                        displayMatrix.Text =
-                            Matrix_calc.Determinante(Matrix_calc.toMatrix(matrixInput1.Text)).ToString();
+                        if (Matrix_calc.toMatrix(matrixInput1.Text).GetLength(0) == Matrix_calc.toMatrix(matrixInput1.Text).GetLength(1))
+                        {
+                            displayMatrix.Text =
+                                Matrix_calc.Determinante(Matrix_calc.toMatrix(matrixInput1.Text)).ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("A matriz deve ser quadrada");
+                        }
                         break;
                     case "Inversa":
-                        displayMatrix.Text =
-                            Matrix_calc.toString(Matrix_calc.Inversa(Matrix_calc.toMatrix(matrixInput1.Text)));
+                        if (Matrix_calc.toMatrix(matrixInput1.Text).GetLength(0) == Matrix_calc.toMatrix(matrixInput1.Text).GetLength(1))
+                        {
+                            if (Matrix_calc.Determinante(Matrix_calc.toMatrix(matrixInput1.Text)) != 0)
+                            {
+                                displayMatrix.Text =
+                                    Matrix_calc.toString(Matrix_calc.Inversa(Matrix_calc.toMatrix(matrixInput1.Text)));
+                            }
+                            else
+                            {
+                                MessageBox.Show("Matriz não inversível, pois seu determinante equivale a 0");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Matriz não inversível, pois não é quadrada");
+                        }
                         break;
                     case "Transposta":
                         displayMatrix.Text =
